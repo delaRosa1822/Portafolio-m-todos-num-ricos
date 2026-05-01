@@ -59,11 +59,5 @@ El código completo se encuentra en el archivo `biseccion.py` dentro de este rep
 
 ---
 
-## Otro: Problemario
-Para revisar la resolución completa paso a paso de varios ejercicios usando este método, consulta el siguiente documento:
-* [Ver Problemario de Métodos Numéricos](./problemario.pdf)
-
----
-
 ## Si el algoritmo es diferente a la codificación
 En el código se agregó una validación de seguridad fundamental antes de iniciar el ciclo `while` o `for`: **la comprobación del Teorema de Bolzano**. El programa evalúa si `f(a) * f(b) >= 0`. Si el resultado es positivo o cero, significa que no hay garantía de que exista una raíz en ese intervalo (no hay cambio de signo), por lo que el programa arroja una alerta y detiene la ejecución para evitar procesar datos inútiles.
