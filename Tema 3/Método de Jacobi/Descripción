@@ -59,11 +59,5 @@ Sistema a resolver:
 
 ---
 
-## Otro: Problemario
-Para revisar la demostración paso a paso y comparar la velocidad de convergencia entre Jacobi y Gauss-Seidel, consulta el siguiente documento:
-* [Ver Problemario de Métodos Numéricos](./problemario.pdf)
-
----
-
 ## Notas sobre el Algoritmo y la Codificación
 Al pasar la lógica matemática del algoritmo a código Python, la principal diferencia radica en el manejo de variables. Mientras Gauss-Seidel sobrescribe directamente el arreglo principal `X`, el método de Jacobi requiere programar un arreglo temporal (en el código llamado `X_nuevo`). Esto asegura que, durante el ciclo de sumatorias, no se contamine la fórmula con un valor recién calculado. Solo al final del ciclo se hace la instrucción `X = X_nuevo.copy()`. Además, se mantuvo la validación de matriz diagonalmente dominante, ya que al igual que su método hermano, Jacobi requiere esta condición estricta para no divergir.
