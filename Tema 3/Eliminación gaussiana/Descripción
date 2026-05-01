@@ -1,0 +1,69 @@
+# Método de Eliminación Gaussiana
+
+## ¿Qué es?
+Es un algoritmo del álgebra lineal que se utiliza para resolver sistemas de ecuaciones lineales. Consiste en aplicar operaciones elementales por filas para transformar la matriz aumentada del sistema en una matriz triangular superior (donde todos los elementos debajo de la diagonal principal son cero). Una vez lograda esta forma, el valor de las incógnitas se encuentra fácilmente mediante un proceso llamado "sustitución hacia atrás".
+
+---
+
+## Fórmula / Ecuación
+El método no tiene una única fórmula continua, sino un factor de multiplicación $m$ que se usa para anular los elementos debajo del pivote (la diagonal principal):
+
+$$ m = \frac{a_{ij}}{a_{jj}} $$
+
+Donde:
+- $a_{ij}$ es el elemento que deseamos convertir en cero.
+- $a_{jj}$ es el elemento pivote en la diagonal principal.
+
+La operación elemental que se aplica a toda la fila $F_i$ es:
+- $F_i \leftarrow F_i - m \cdot F_j$
+
+---
+
+## Algoritmo
+1. **Inicio.**
+2. Escribir el sistema de ecuaciones en forma de matriz aumentada $[A | B]$, donde $A$ son los coeficientes y $B$ los términos independientes.
+3. Para cada columna $j$ desde la primera hasta la penúltima:
+   - Identificar el elemento pivote en la diagonal $a_{jj}$.
+   - Si el pivote es $0$, intercambiar esa fila con una fila inferior que tenga un valor diferente de cero en esa columna (Pivoteo Parcial).
+   - Para cada fila $i$ debajo del pivote, calcular el factor $m = a_{ij} / a_{jj}$.
+   - Restar a la fila $i$ el resultado de multiplicar la fila del pivote por $m$.
+4. Una vez obtenida la matriz triangular superior, iniciar la **sustitución hacia atrás**:
+   - Despejar la última incógnita.
+   - Sustituir ese valor en la ecuación anterior para despejar la penúltima, y así sucesivamente hasta la primera.
+5. **Fin.**
+
+---
+
+## Código Fuente
+El código fuente se encuentra en el archivo `eliminacion_gaussiana.py`. Utiliza la librería **NumPy** de Python para facilitar el manejo y las operaciones matemáticas con matrices bidimensionales.
+
+---
+
+## Compilación con datos de entrada y de salida
+
+### Ejemplo 1: Sistema de 3x3
+Sistema de ecuaciones:
+1) $x + y + z = 6$
+2) $2x - y + z = 3$
+3) $x + 2y - z = 2$
+
+* **Datos de entrada:**
+    * Número de incógnitas: `3`
+    * Fila 1: `1, 1, 1, 6`
+    * Fila 2: `2, -1, 1, 3`
+    * Fila 3: `1, 2, -1, 2`
+* **Datos de salida:**
+    * `x_0 = 1.0`
+    * `x_1 = 2.0`
+    * `x_2 = 3.0`
+
+---
+
+## Otro: Problemario
+Puedes revisar el desarrollo manual de las matrices y más sistemas de ecuaciones resueltos en el siguiente documento:
+* [Ver Problemario de Métodos Numéricos](./problemario.pdf)
+
+---
+
+## Si el algoritmo es diferente a la codificación
+En el código se ha implementado un proceso conocido como **Pivoteo Parcial**, que a veces se omite en los algoritmos teóricos más básicos. Si durante el proceso iterativo el código encuentra un $0$ en la diagonal principal ($a_{jj} = 0$), el programa matemático fallaría al intentar dividir entre cero para calcular el multiplicador $m$. Para evitar esto, el código busca en las filas de abajo el número más grande y las intercambia antes de hacer la eliminación.
