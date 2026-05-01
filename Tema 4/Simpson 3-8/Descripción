@@ -1,0 +1,72 @@
+# Regla de Simpson 3/8
+
+## Descripción
+La regla de Simpson 3/8 es un método de integración numérica que se utiliza para calcular el área aproximada bajo una curva (la integral definida de una función). Se basa en conectar los puntos de la función utilizando polinomios de interpolación de tercer grado (cúbicos). Para que este método se pueda aplicar en su forma compuesta, es un requisito estricto que el número de intervalos elegidos sea un múltiplo de 3.
+
+---
+
+## Ecuación / Fórmula
+La fórmula de aplicación compuesta para $n$ intervalos (donde $n$ es múltiplo de 3) se define como:
+
+$$ \int_{a}^{b} f(x) dx \approx \frac{3h}{8} \left[ f(x_0) + 3 \sum_{i=1, 4, 7...}^{n-2} f(x_i) + 3 \sum_{i=2, 5, 8...}^{n-1} f(x_i) + 2 \sum_{i=3, 6, 9...}^{n-3} f(x_i) + f(x_n) \right] $$
+
+Donde:
+- $h = \frac{b - a}{n}$ (el ancho de cada subintervalo).
+- $x_0 = a$ (límite inferior).
+- $x_n = b$ (límite superior).
+
+---
+
+## Algoritmo
+1. **Inicio.**
+2. Definir la función $f(x)$, el límite inferior $a$, el límite superior $b$ y el número de intervalos $n$.
+3. Verificar si $n$ es un múltiplo de 3. Si no lo es, detener el proceso o pedir un nuevo valor.
+4. Calcular el ancho del intervalo: $h = (b - a) / n$.
+5. Calcular el valor de la función en los extremos: $Suma = f(a) + f(b)$.
+6. Iniciar un ciclo desde $i = 1$ hasta $n - 1$:
+   - Calcular el punto de evaluación: $x_i = a + i \cdot h$.
+   - Si el índice $i$ es múltiplo de 3, multiplicar $f(x_i)$ por 2 y agregarlo a la $Suma$.
+   - Si el índice $i$ NO es múltiplo de 3, multiplicar $f(x_i)$ por 3 y agregarlo a la $Suma$.
+7. Multiplicar la $Suma$ total por el factor $\frac{3 \cdot h}{8}$.
+8. Mostrar el resultado de la integral aproximada.
+9. **Fin.**
+
+---
+
+## Código Fuente
+El código completo se encuentra en el archivo `simpson_3_8.py`. Utiliza la librería **SymPy** de Python para procesar cualquier función matemática introducida por el usuario y evaluarla dinámicamente en los puntos requeridos.
+
+---
+
+## Compilación con datos de entrada y de salida
+
+### Ejemplo 1: Función Polinómica
+* **Datos de entrada:**
+    * Función: `x**3`
+    * Límite inferior ($a$): `0`
+    * Límite superior ($b$): `3`
+    * Número de intervalos ($n$): `3`
+* **Datos de salida:**
+    * Ancho del intervalo ($h$): `1.0`
+    * Área aproximada (Integral): `20.250000`
+
+### Ejemplo 2: Función Trascendente
+* **Datos de entrada:**
+    * Función: `sin(x)`
+    * Límite inferior ($a$): `0`
+    * Límite superior ($b$): `3.14159265` (Aprox. $\pi$)
+    * Número de intervalos ($n$): `6`
+* **Datos de salida:**
+    * Ancho del intervalo ($h$): `0.523598`
+    * Área aproximada (Integral): `2.000863` *(El valor exacto es 2)*
+
+---
+
+## Otro: Problemario
+Para consultar el desarrollo manual del cálculo de las áreas y el análisis de errores de este método, visita el enlace:
+* [Ver Problemario de Integración Numérica](./problemario.pdf)
+
+---
+
+## Notas sobre el Algoritmo y la Codificación
+En la codificación se agregó una validación estricta utilizando la operación módulo (`n % 3 != 0`). El algoritmo puramente matemático asume que el usuario sabe que $n$ debe ser múltiplo de 3, pero computacionalmente, si se ingresa un valor como $n=4$ o $n=5$, los multiplicadores del ciclo (`x2` y `x3`) se aplicarían de forma asimétrica, devolviendo un área completamente errónea. El programa previene este error matemático deteniendo la ejecución y alertando al usuario antes de hacer cualquier cálculo.
