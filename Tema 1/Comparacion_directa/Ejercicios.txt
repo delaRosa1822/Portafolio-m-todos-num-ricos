@@ -1,2 +1,0 @@
-Comparacion directa con == 
-
