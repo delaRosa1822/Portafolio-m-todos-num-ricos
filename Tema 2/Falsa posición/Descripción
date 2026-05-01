@@ -54,11 +54,5 @@ El código se encuentra en el archivo `falsa_posicion.py`. Hace uso de la librer
 
 ---
 
-## Otro: Problemario
-Puedes consultar los ejercicios resueltos paso a paso en el siguiente enlace:
-* [Ver Problemario de Métodos Numéricos](./problemario.pdf)
-
----
-
 ## Si el algoritmo es diferente a la codificación
 En la codificación se agregó una validación inicial estricta que no suele venir en los diagramas de flujo teóricos: **la verificación de cambio de signo**. Antes de iniciar el ciclo iterativo, el código evalúa matemáticamente si `f(a) * f(b) >= 0`. Si ambos tienen el mismo signo, el programa arroja una alerta y se detiene. Esto previene bucles infinitos, ya que la regla fundamental de este método (y de todos los cerrados) es que la raíz debe estar obligatoriamente atrapada dentro de los límites propuestos.
