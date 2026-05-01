@@ -1,0 +1,68 @@
+# Método de la Secante
+
+## ¿Qué es?
+Es un método numérico abierto para encontrar las raíces de una función. Es una variación del método de Newton-Raphson, pero con una gran ventaja: **no requiere calcular la derivada analítica de la función**. En su lugar, aproxima la derivada trazando una línea secante a través de dos puntos iniciales y calcula dónde esa secante cruza el eje x.
+
+---
+
+## Fórmula
+La ecuación iterativa para calcular la siguiente aproximación es:
+
+$$ x_{i+1} = x_i - \frac{f(x_i)(x_i - x_{i-1})}{f(x_i) - f(x_{i-1})} $$
+
+Donde:
+- $x_{i+1}$ es la nueva aproximación.
+- $x_i$ es la aproximación actual.
+- $x_{i-1}$ es la aproximación anterior.
+
+---
+
+## Algoritmo
+1. **Inicio.**
+2. Definir la función $f(x)$.
+3. Proporcionar dos valores iniciales $x_0$ y $x_1$ (no es estrictamente necesario que encierren la raíz, ya que es un método abierto).
+4. Establecer la tolerancia de error y el número máximo de iteraciones.
+5. Evaluar la función en los puntos actuales: $f(x_0)$ y $f(x_1)$.
+6. Calcular la nueva aproximación $x_2$ usando la fórmula de la secante.
+7. Calcular el error absoluto: $|x_2 - x_1|$.
+8. Si el error es menor a la tolerancia, $x_2$ es la raíz y el programa termina.
+9. Si no cumple la tolerancia, actualizar los valores: $x_0$ toma el valor de $x_1$, y $x_1$ toma el valor de $x_2$. Repetir desde el paso 5.
+10. **Fin.**
+
+---
+
+## Código Fuente
+El código fuente completo se encuentra en el archivo `secante.py` de este repositorio. Utiliza la librería **SymPy** para permitir que el usuario ingrese cualquier función matemática como texto y evaluarla sin necesidad de programarla manualmente cada vez.
+
+---
+
+## Compilación con datos de entrada y de salida
+
+### Ejemplo 1: Polinomio
+* **Datos de entrada:**
+    * Función: `x**3 - 2*x - 5`
+    * Punto anterior ($x_0$): `2`
+    * Punto actual ($x_1$): `3`
+* **Datos de salida:**
+    * Iteraciones: 4
+    * Raíz aproximada: `2.094551`
+
+### Ejemplo 2: Función Exponencial
+* **Datos de entrada:**
+    * Función: `exp(-x) - x`
+    * Punto anterior ($x_0$): `0`
+    * Punto actual ($x_1$): `1`
+* **Datos de salida:**
+    * Iteraciones: 4
+    * Raíz aproximada: `0.567143`
+
+---
+
+## Otro: Problemario
+Puedes consultar la lista de ejercicios de métodos abiertos en el siguiente enlace:
+* [Ver Problemario de Métodos Numéricos](./problemario.pdf)
+
+---
+
+## Si el algoritmo es diferente a la codificación
+La codificación incluye un mecanismo de seguridad para evitar una **división por cero**. En la fórmula matemática, el denominador es $f(x_i) - f(x_{i-1})$. Si en alguna iteración la función evaluada en ambos puntos da exactamente el mismo resultado (lo que trazaría una línea horizontal perfecta), el código lanzará un aviso y detendrá el proceso para evitar que el programa colapse, un detalle de validación de software que el algoritmo teórico puro suele omitir.
