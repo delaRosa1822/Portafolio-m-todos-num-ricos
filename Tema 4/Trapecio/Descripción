@@ -62,11 +62,5 @@ El código fuente se encuentra en el archivo `trapecio.py`. Utiliza la librería
 
 ---
 
-## Otro: Problemario
-Para revisar cómo se reduce el error al aumentar el número de trapecios y ver ejercicios resueltos paso a paso, consulta el documento:
-* [Ver Problemario de Integración Numérica](./problemario.pdf)
-
----
-
 ## Notas sobre el Algoritmo y la Codificación
 En el código de Python, a diferencia del diagrama matemático general, se incluyó una validación lógica que impide que el usuario ingrese un valor de $n \le 0$. Matemáticamente no se pueden formar "cero trapecios" ni trapecios negativos, y si $n=0$, el cálculo del ancho $h$ provocaría un error fatal en el programa por división entre cero. El código detiene amablemente la ejecución si detecta esta entrada inválida.
