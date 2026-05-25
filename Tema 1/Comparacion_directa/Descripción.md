@@ -16,10 +16,6 @@ Error = | 0.10000000000000009 - 0.1 | = 0.00000000000000009
 3. Utilizar una estructura condicional (`if/else`) para comparar si el resultado es estrictamente igual (`==`) al valor esperado (0.1).
 4. Imprimir un mensaje en consola dependiendo de si la comparación fue verdadera o falsa.
 
-## Código Fuente
-* [Comparacion en python](./Comparacion.py)
----
-
 Entrada: 
 Operación: 1.1 - 1.0
 Condición a evaluar: resultado == 0.1
@@ -27,5 +23,13 @@ Condición a evaluar: resultado == 0.1
 Salida:
 Resultado de la resta: 0.10000000000000009
 No es 0.1!
+
+## Código Fuente
+* [Comparacion en python](./Comparacion.py)
+---
+
+## Problemario
+https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
+---
 
 🔙 [Volver al Índice Principal](../../README.md)
