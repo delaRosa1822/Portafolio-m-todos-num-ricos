@@ -28,7 +28,7 @@ $$ x_r = b - \frac{f(b)(a - b)}{f(a) - f(b)} $$
 ---
 
 ## Código Fuente
-El código se encuentra en el archivo `falsa_posicion.py`. Hace uso de la librería **SymPy** para poder procesar dinámicamente cualquier función matemática que se introduzca como texto.
+* [Falsa Posición en python](./falsa_posicion.py)
 
 ---
 
@@ -54,5 +54,4 @@ El código se encuentra en el archivo `falsa_posicion.py`. Hace uso de la librer
 
 ---
 
-## Si el algoritmo es diferente a la codificación
-En la codificación se agregó una validación inicial estricta que no suele venir en los diagramas de flujo teóricos: **la verificación de cambio de signo**. Antes de iniciar el ciclo iterativo, el código evalúa matemáticamente si `f(a) * f(b) >= 0`. Si ambos tienen el mismo signo, el programa arroja una alerta y se detiene. Esto previene bucles infinitos, ya que la regla fundamental de este método (y de todos los cerrados) es que la raíz debe estar obligatoriamente atrapada dentro de los límites propuestos.
+🔙 [Volver al Índice Principal](../../README.md)
