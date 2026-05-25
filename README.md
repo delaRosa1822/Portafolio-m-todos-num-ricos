@@ -63,3 +63,8 @@ Solución numérica de Ecuaciones Diferenciales Ordinarias (EDO).
 * [Método de Euler](./Tema6/Euler/Descripción.md)
 * [Método de Runge-Kutta](./Tema6/Runge-Kutta/Descripción.md)
 * [Series de Taylor](./Tema6/Taylor/Descripción.md)
+  
+---
+
+## Problemario
+https://drive.google.com/drive/folders/17W8mBd3SLLaAsjTjcJaBN0z9ehpM2kqF?usp=sharing
