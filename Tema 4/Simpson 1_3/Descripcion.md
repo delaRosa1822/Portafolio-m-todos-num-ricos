@@ -1,35 +1,65 @@
-# Método de Simpson 1/3 (Fórmula Simple)
+# Regla de Simpson 1/3
 
-## ¿Qué es?
-Es un método de integración numérica utilizado para aproximar el valor de una integral definida (el área bajo una curva). A diferencia de la regla del trapecio, que une los puntos con líneas rectas, la regla de Simpson 1/3 los une utilizando polinomios de segundo grado (parábolas). La versión "simple" se aplica sobre un solo intervalo $[a, b]$, evaluando la función en los extremos y en el punto medio exacto.
+## Descripción
+La regla de Simpson 1/3 es un método de integración numérica que aproxima el valor de una integral definida (el área bajo la curva) conectando grupos de tres puntos sucesivos en la función utilizando polinomios de segundo grado (parábolas). Es significativamente más precisa que la regla del trapecio. Para aplicar este método en su forma compuesta, es un requisito matemático estricto que el número total de subintervalos ($n$) sea un número par.
 
-## Fórmula
-Para una función matemática f(x) evaluada en el intervalo [a, b], la fórmula simple de Simpson 1/3 se define como:
+---
 
-\int_{a}^{b} f(x) dx \approx \frac{h}{3} [f(a) + 4f(m) + f(b)]
+## Ecuación / Fórmula
+La fórmula para la aplicación compuesta de la regla de Simpson 1/3, dividiendo el área en $n$ subintervalos de ancho igual, es:
+
+$$\int_{a}^{b} f(x) dx \approx \frac{h}{3} \left[ f(x_0) + 4 \sum_{i=1, 3, 5...}^{n-1} f(x_i) + 2 \sum_{i=2, 4, 6...}^{n-2} f(x_i) + f(x_n) \right]$$
 
 Donde:
-* a es el límite inferior.
-* b es el límite superior.
-* m = \frac{a + b}{2}$ es el punto medio.
-* h = \frac{b - a}{2}$ es la distancia (o tamaño de paso) entre los puntos.
+- $h = \frac{b - a}{n}$ (el ancho de cada subintervalo).
+- $x_0 = a$ (límite inferior).
+- $x_n = b$ (límite superior).
+
+---
 
 ## Algoritmo
-1. Definir la función matemática $f(x)$ que se desea integrar.
-2. Establecer los límites de integración $a$ (inferior) y $b$ (superior).
-3. Calcular el punto medio $m$ sumando los límites y dividiéndolos entre 2.
-4. Calcular el tamaño del paso $h$.
-5. Evaluar la función en los puntos $f(a)$, $f(m)$ y $f(b)$.
-6. Aplicar la fórmula multiplicando por los pesos correspondientes (1, 4, 1) y multiplicando el total por $h/3$.
-7. Imprimir el resultado de la aproximación.
+1. **Inicio.**
+2. Definir la función $f(x)$, el límite inferior $a$, el límite superior $b$ y el número de intervalos $n$.
+3. Verificar si $n$ es un número par. Si es impar, el método falla y se debe solicitar un nuevo valor.
+4. Calcular el ancho del intervalo: $h = (b - a) / n$.
+5. Evaluar la función en los extremos y sumarlos: $Suma = f(a) + f(b)$.
+6. Iniciar un ciclo desde $i = 1$ hasta $n - 1$:
+   - Calcular el punto actual: $x_i = a + i \cdot h$.
+   - Si el índice $i$ es impar, multiplicar $f(x_i)$ por 4 y agregarlo a la $Suma$.
+   - Si el índice $i$ es par, multiplicar $f(x_i)$ por 2 y agregarlo a la $Suma$.
+7. Multiplicar la $Suma$ total por el factor $\frac{h}{3}$.
+8. Mostrar el resultado de la integral aproximada.
+9. **Fin.**
 
-Entrada: 
-Función: f(x) = x^2
-Límite a = 0.0
-Límite b = 2.0
+---
 
-Salida:
---- Método de Simpson 1/3 (Simple) ---
-Límite inferior (a): 0.0
-Límite superior (b): 2.0
-Aproximación del área: 2.6666666666666665
+## Código Fuente
+* [Simpson 1_3 en python](./Codigo.py)
+
+---
+
+## Compilación con datos de entrada y de salida
+
+### Ejemplo 1: Función Polinómica
+* **Datos de entrada:**
+    * Función: `x**4`
+    * Límite inferior ($a$): `0`
+    * Límite superior ($b$): `2`
+    * Número de intervalos ($n$): `4` (Debe ser par)
+* **Datos de salida:**
+    * Ancho del intervalo ($h$): `0.500000`
+    * Área aproximada (Integral): `6.416667` *(El valor exacto es 6.4)*
+
+### Ejemplo 2: Función Logarítmica
+* **Datos de entrada:**
+    * Función: `log(x)`
+    * Límite inferior ($a$): `1`
+    * Límite superior ($b$): `3`
+    * Número de intervalos ($n$): `6`
+* **Datos de salida:**
+    * Ancho del intervalo ($h$): `0.333333`
+    * Área aproximada (Integral): `1.295837` *(El valor exacto es aprox 1.295836)*
+
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
