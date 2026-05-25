@@ -60,5 +60,5 @@ Sistema de ecuaciones:
 
 ---
 
-## Si el algoritmo es diferente a la codificación
-En el código se ha implementado un proceso conocido como **Pivoteo Parcial**, que a veces se omite en los algoritmos teóricos más básicos. Si durante el proceso iterativo el código encuentra un $0$ en la diagonal principal ($a_{jj} = 0$), el programa matemático fallaría al intentar dividir entre cero para calcular el multiplicador $m$. Para evitar esto, el código busca en las filas de abajo el número más grande y las intercambia antes de hacer la eliminación.
+🔙 [Volver al Índice Principal](../../README.md)
+
