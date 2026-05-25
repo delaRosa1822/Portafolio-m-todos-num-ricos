@@ -31,7 +31,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código fuente está disponible en el archivo `jacobi.py`. Utiliza arreglos de **NumPy** para gestionar de forma eficiente la memoria, almacenando una copia intacta del vector de la iteración anterior mientras se calculan los nuevos valores.
+* [Método de jacobi en python](./jacobi.py)
 
 ---
 
@@ -58,6 +58,4 @@ Sistema a resolver:
 *(Nota: En comparación, Gauss-Seidel resuelve este mismo sistema en 6 iteraciones debido a su actualización secuencial).*
 
 ---
-
-## Notas sobre el Algoritmo y la Codificación
-Al pasar la lógica matemática del algoritmo a código Python, la principal diferencia radica en el manejo de variables. Mientras Gauss-Seidel sobrescribe directamente el arreglo principal `X`, el método de Jacobi requiere programar un arreglo temporal (en el código llamado `X_nuevo`). Esto asegura que, durante el ciclo de sumatorias, no se contamine la fórmula con un valor recién calculado. Solo al final del ciclo se hace la instrucción `X = X_nuevo.copy()`. Además, se mantuvo la validación de matriz diagonalmente dominante, ya que al igual que su método hermano, Jacobi requiere esta condición estricta para no divergir.
+🔙 [Volver al Índice Principal](../../README.md)
