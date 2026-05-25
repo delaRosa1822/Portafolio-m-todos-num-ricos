@@ -32,7 +32,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código fuente completo se encuentra en el archivo `secante.py` de este repositorio. Utiliza la librería **SymPy** para permitir que el usuario ingrese cualquier función matemática como texto y evaluarla sin necesidad de programarla manualmente cada vez.
+* [Secante en python](./secante.py)
 
 ---
 
@@ -57,6 +57,9 @@ El código fuente completo se encuentra en el archivo `secante.py` de este repos
     * Raíz aproximada: `0.567143`
 
 ---
+
+🔙 [Volver al Índice Principal](../../README.md)
+
 
 ## Si el algoritmo es diferente a la codificación
 La codificación incluye un mecanismo de seguridad para evitar una **división por cero**. En la fórmula matemática, el denominador es $f(x_i) - f(x_{i-1})$. Si en alguna iteración la función evaluada en ambos puntos da exactamente el mismo resultado (lo que trazaría una línea horizontal perfecta), el código lanzará un aviso y detendrá el proceso para evitar que el programa colapse, un detalle de validación de software que el algoritmo teórico puro suele omitir.
