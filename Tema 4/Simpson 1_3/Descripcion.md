@@ -59,6 +59,10 @@ Donde:
 * **Datos de salida:**
     * Ancho del intervalo ($h$): `0.333333`
     * Área aproximada (Integral): `1.295837` *(El valor exacto es aprox 1.295836)*
+---
+
+## Problemario
+https://drive.google.com/file/d/1bb9TTtoZdWJ3CZQOTU05oKkxEsiogW8z/view?usp=drive_link
 
 ---
 
