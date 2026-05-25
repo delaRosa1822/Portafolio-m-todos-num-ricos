@@ -25,3 +25,9 @@ numero_grande = 7000000000
 Salida:
 Valor original: 7000000000
 Valor tras el corte: -1589934592
+
+## Código Fuente
+* [Conversion en python](./conversion.py)
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
