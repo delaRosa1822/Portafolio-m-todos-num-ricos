@@ -33,8 +33,8 @@ $$y'' = \frac{d}{dx} f(x,y) = \frac{\partial f}{\partial x} + \frac{\partial f}{
 ---
 
 ## Código Fuente
-El código se encuentra en el archivo `taylor_edo.py`. Hace un uso avanzado de la librería **SymPy** y **Math** en Python para automatizar el cálculo analítico de las derivadas totales sucesivas, evitando al programador el pesado trabajo de derivar a mano.
-
+* [Taylor en python](./taylor_edo.py)
+  
 ---
 
 ## Compilación con datos de entrada y de salida
@@ -75,5 +75,4 @@ Para revisar la demostración matemática de cómo se obtienen las derivadas de 
 
 ---
 
-## Notas sobre el Algoritmo y la Codificación
-Este código contiene una de las implementaciones algorítmicas más elegantes del curso. En la teoría matemática de Taylor, obtener $y''$, $y'''$ o $y^{(4)}$ a mano para funciones complejas implica un álgebra extensa y propensa a errores. En el bloque de código, se implementó un bucle que calcula la derivada total analítica dinámicamente usando la fórmula `derivada_total = parcial_x + parcial_y * f`. De esta manera, el programa puede construir un polinomio de Taylor de cualquier orden $k$ que solicite el usuario.
+🔙 [Volver al Índice Principal](../../README.md)
