@@ -31,7 +31,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código completo está en el archivo `gauss_seidel.py`. Está diseñado de forma muy práctica y amigable para principiantes utilizando **NumPy**, separando claramente la inicialización del sistema y el ciclo de iteraciones.
+* [Metodo de Gauss-Seidel en python](./gauss_seidel.py)
 
 ---
 
@@ -56,6 +56,4 @@ Sistema a resolver:
     * `x_2 = 1.0`
 
 ---
-
-## Notas sobre el Algoritmo y la Codificación
-En el código fuente, si bien la lógica central sigue la fórmula al pie de la letra, se agregó una función previa que evalúa estrictamente si la matriz ingresada es **diagonalmente dominante**. El algoritmo clásico a veces asume que el usuario ya preparó el sistema, pero a nivel de programación es fundamental realizar esta validación, ya que si la matriz no cumple esta condición, el método de Gauss-Seidel podría divergir (los valores se irían al infinito en lugar de encontrar la solución). El código avisa al usuario si esto ocurre.
+🔙 [Volver al Índice Principal](../../README.md)
