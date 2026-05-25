@@ -61,6 +61,3 @@ Sistema a resolver:
 ---
 🔙 [Volver al Índice Principal](../../README.md)
 ---
-
-## Notas sobre el Algoritmo y la Codificación
-En la codificación en Python, se incorporó un bloque de instrucciones para realizar **Pivoteo Parcial**. El algoritmo matemático teórico asume que los elementos de la diagonal nunca son cero, pero en la práctica computacional, si el programa encuentra un cero en la diagonal, la operación de normalización causaría un error por "división entre cero". El código identifica esto, busca la fila inferior con el mayor valor absoluto en esa columna y las intercambia automáticamente antes de realizar las divisiones.
