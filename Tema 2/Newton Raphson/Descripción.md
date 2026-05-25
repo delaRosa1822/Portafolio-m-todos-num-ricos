@@ -24,7 +24,7 @@ $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$
 ---
 
 ## Código Fuente
-El código fuente completo se encuentra en el archivo `newton_raphson.py` de este repositorio. Utiliza la librería **SymPy** para permitir el ingreso de cualquier función matemática y calcular su derivada automáticamente.
+* [Newton Raphson en python](./newton_raphson.py)
 
 ---
 
@@ -48,5 +48,4 @@ El código fuente completo se encuentra en el archivo `newton_raphson.py` de est
 
 ---
 
-## Si el algoritmo es diferente a la codificación
-En este caso, la codificación incluye una validación crítica que no siempre se menciona en el algoritmo básico: **la división por cero**. Si la derivada evaluada es 0, el programa lanza una alerta para evitar el error lógico de ejecución. Además, se implementó el uso de "Sympify" para que el programa sea dinámico y acepte cualquier entrada de texto como función matemática.
+🔙 [Volver al Índice Principal](../../README.md)
