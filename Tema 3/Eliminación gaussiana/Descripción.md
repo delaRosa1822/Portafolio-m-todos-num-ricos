@@ -35,7 +35,8 @@ La operación elemental que se aplica a toda la fila $F_i$ es:
 ---
 
 ## Código Fuente
-El código fuente se encuentra en el archivo `eliminacion_gaussiana.py`. Utiliza la librería **NumPy** de Python para facilitar el manejo y las operaciones matemáticas con matrices bidimensionales.
+
+* [Eliminación gaussiana en python](./eliminacion_gaussiana.py)
 
 ---
 
