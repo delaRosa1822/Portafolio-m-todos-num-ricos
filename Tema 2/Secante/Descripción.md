@@ -55,6 +55,10 @@ Donde:
 * **Datos de salida:**
     * Iteraciones: 4
     * Raíz aproximada: `0.567143`
+---
+
+## Problemario
+https://docs.google.com/spreadsheets/d/1thjpHbP6wUjWB4pamsFKiq-TcGPFY9YL/edit?usp=sharing&ouid=106071786961247741383&rtpof=true&sd=true
 
 ---
 
