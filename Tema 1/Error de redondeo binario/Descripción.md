@@ -1,5 +1,3 @@
-Error de Redondeo Binario
-
 ## ¿Qué es?
 El error de redondeo binario es una limitación física de las computadoras. Así como en nuestro sistema decimal (base 10) no podemos escribir el número exacto de la fracción $1/3$ (porque es $0.333333...$ infinito), las computadoras usan el sistema binario (base 2) y no pueden representar exactamente fracciones simples como $0.1$ o $0.2$. 
 
@@ -29,3 +27,8 @@ Operación: numero1 + numero2
 Salida:
 La suma de 0.1 + 0.2 es:
 0.30000000000000004
+
+## Código Fuente
+* [Error de redondeo en python](./codigo.py)
+---
+🔙 [Volver al Índice Principal](../../README.md)
