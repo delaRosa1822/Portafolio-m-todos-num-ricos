@@ -21,6 +21,10 @@ Donde:
 6. Sumar los tres términos para obtener el valor estimado de $y$.
 7. Imprimir el resultado en la consola.
 
+## Código Fuente
+* [Interpolacion_cuadratica en python](./Código.py)
+---
+
 ## Datos
 Entrada: 
 Punto 0: (1.0, 1.0)
@@ -32,3 +36,7 @@ Salida:
 --- Interpolación Cuadrática ---
 Puntos: (1.0, 1.0), (2.0, 4.0), (3.0, 9.0)
 Para x = 2.5, el valor estimado de y es: 6.25
+
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
