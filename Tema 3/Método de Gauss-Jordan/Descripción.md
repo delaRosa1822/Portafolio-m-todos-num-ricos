@@ -37,8 +37,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código fuente completo se encuentra en el archivo `gauss_jordan.py`. El script utiliza la librería **NumPy** en Python para manejar las matrices de manera práctica y ejecutar las operaciones por filas mediante arreglos multidimensionales.
-
+* [Metodo de Gauss-Jordan en python](./gauss_jordan.py)
 ---
 
 ## Compilación con datos de entrada y de salida
@@ -60,7 +59,7 @@ Sistema a resolver:
     * `x_2 = -1.0`
 
 ---
-
+🔙 [Volver al Índice Principal](../../README.md)
 ---
 
 ## Notas sobre el Algoritmo y la Codificación
