@@ -1,5 +1,3 @@
-# Pérdida de precisión por magnitud (IEEE 754)
-
 ## ¿Qué es?
 Cuando operamos con números de punto flotante que tienen magnitudes drásticamente diferentes (uno gigante y uno diminuto), el número más pequeño puede "desaparecer". Esto sucede porque, bajo el estándar IEEE 754, la memoria asignada para guardar los dígitos de un número (la *mantisa*) tiene un límite físico (53 bits para precisión doble, que equivalen a unos 15-17 dígitos decimales). 
 
@@ -29,3 +27,9 @@ Salida:
 Valor de A: 1e+16
 Valor de B: 0.1
 Suma (A + B): 1e+16
+
+## Código Fuente
+* [Perdida_precision_magnitud en python](./codigo.py)
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
