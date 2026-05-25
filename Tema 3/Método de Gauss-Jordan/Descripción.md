@@ -58,6 +58,10 @@ Sistema a resolver:
     * `x_1 = 3.0`
     * `x_2 = -1.0`
 
+
+
+## Problemario
+https://drive.google.com/file/d/1uJzHxw1KtA_l0951911ma6kquPS7wDDU/view?usp=drive_link
 ---
 🔙 [Volver al Índice Principal](../../README.md)
 ---
