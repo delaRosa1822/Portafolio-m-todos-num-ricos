@@ -35,7 +35,7 @@ Donde:
 ---
 
 ## Código Fuente
-El script se encuentra en el archivo `euler.py`. Emplea la librería **SymPy** de Python para que puedas introducir cualquier ecuación diferencial con dos variables ($x$, $y$) directamente desde la consola, sin necesidad de reprogramar la función internamente.
+* [Biseccion en python](./euler.py)
 
 ---
 
@@ -75,5 +75,4 @@ Para visualizar gráficamente cómo el tamaño del paso $h$ afecta el error de t
 
 ---
 
-## Notas sobre el Algoritmo y la Codificación
-A diferencia de los algoritmos de raíces vistos anteriormente donde la función dependía de una sola variable ($x$), en este código la función se parsea para que dependa de dos símbolos simultáneos (`x` e `y`). Esto se logra usando `sp.lambdify((x, y), f)` en SymPy, lo que permite evaluar la pendiente de forma dinámica en cada punto del plano cartesiano durante el ciclo iterativo.
+🔙 [Volver al Índice Principal](../../README.md)
