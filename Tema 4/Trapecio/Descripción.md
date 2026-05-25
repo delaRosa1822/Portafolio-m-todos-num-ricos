@@ -34,7 +34,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código fuente se encuentra en el archivo `trapecio.py`. Utiliza la librería **SymPy** para leer la función matemática como un texto y convertirla en una expresión evaluable de forma dinámica.
+* [Trapecio en python](./trapecio.py)
 
 ---
 
@@ -62,5 +62,4 @@ El código fuente se encuentra en el archivo `trapecio.py`. Utiliza la librería
 
 ---
 
-## Notas sobre el Algoritmo y la Codificación
-En el código de Python, a diferencia del diagrama matemático general, se incluyó una validación lógica que impide que el usuario ingrese un valor de $n \le 0$. Matemáticamente no se pueden formar "cero trapecios" ni trapecios negativos, y si $n=0$, el cálculo del ancho $h$ provocaría un error fatal en el programa por división entre cero. El código detiene amablemente la ejecución si detecta esta entrada inválida.
+🔙 [Volver al Índice Principal](../../README.md)
