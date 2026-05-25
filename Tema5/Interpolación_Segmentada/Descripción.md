@@ -30,3 +30,9 @@ Valor a buscar: x = 3.0
 Salida:
 --- Interpolación Segmentada ---
 Para x = 3.0, el valor estimado de y es: 4.0
+
+## Código Fuente
+* [Interpolación_segmentada en python](./codigo.py)
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
