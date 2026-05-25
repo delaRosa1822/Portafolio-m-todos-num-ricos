@@ -18,12 +18,6 @@ $$E_a = | 10.00 - 9.999999999999831 | = 0.000000000000169$$
 4. Al finalizar el ciclo, imprimir el valor que esperábamos obtener (10.00).
 5. Imprimir el valor real obtenido para observar el margen de error acumulado.
 
-
-## Código Fuente
-* [Acumulacion en python](./acumulacion.py)
----
-
-
 Entrada: 
 Ciclos del bucle: 1000
 Incremento en cada ciclo: 0.01
@@ -31,7 +25,12 @@ Incremento en cada ciclo: 0.01
 Salida:
 Saldo esperado: 10.00
 Saldo real: 9.999999999999831
+
+## Código Fuente
+* [Acumulacion en python](./acumulacion.py)
+  
 ---
+
 ## Problemario
 https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
 ---
