@@ -1,5 +1,3 @@
-#Desbordamiento silencioso (Overflow)
-
 ## ¿Qué es?
 A diferencia de los errores de punto flotante (decimales), el desbordamiento silencioso ocurre con tipos de datos enteros (`int`, `long`). En la mayoría de los lenguajes de programación (como Java o C++), las variables tienen un límite estricto de memoria. Si una operación matemática supera el valor máximo positivo que puede almacenar la variable, el sistema no lanza ninguna advertencia o error (excepción); simplemente "da la vuelta" como si fuera un odómetro o un reloj, volviendo al número más pequeño posible (un número negativo enorme), lo que destruye por completo la exactitud del cálculo.
 
@@ -29,3 +27,8 @@ Salida:
 Valor Max: 2147483647
 Valor Maximo + 1: -2147483648
 
+## Código Fuente
+* [Overflow en python](./overflow.py)
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
