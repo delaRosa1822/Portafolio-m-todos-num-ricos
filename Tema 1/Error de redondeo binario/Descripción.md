@@ -31,4 +31,9 @@ La suma de 0.1 + 0.2 es:
 ## Código Fuente
 * [Error de redondeo en python](./codigo.py)
 ---
+
+## Problemario
+https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
+---
+
 🔙 [Volver al Índice Principal](../../README.md)
