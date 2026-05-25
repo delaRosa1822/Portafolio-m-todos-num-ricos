@@ -58,5 +58,4 @@ Donde:
 
 ---
 
-## Si el algoritmo es diferente a la codificación
-En el código se agregó una validación de seguridad fundamental antes de iniciar el ciclo `while` o `for`: **la comprobación del Teorema de Bolzano**. El programa evalúa si `f(a) * f(b) >= 0`. Si el resultado es positivo o cero, significa que no hay garantía de que exista una raíz en ese intervalo (no hay cambio de signo), por lo que el programa arroja una alerta y detiene la ejecución para evitar procesar datos inútiles.
+🔙 [Volver al Índice Principal](../../README.md)
