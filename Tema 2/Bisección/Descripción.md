@@ -33,8 +33,7 @@ Donde:
 ---
 
 ## Código Fuente
-El código completo se encuentra en el archivo `biseccion.py` dentro de este repositorio. Emplea la librería **SymPy** de Python, lo que permite introducir cualquier función matemática como texto para ser procesada dinámicamente sin necesidad de reescribir el programa.
-
+* [Biseccion en python](./biseccion.py)
 ---
 
 ## Compilación con datos de entrada y de salida
