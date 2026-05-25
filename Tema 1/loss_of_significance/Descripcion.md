@@ -28,3 +28,9 @@ Operación: x - y
 Salida:
 Resultado de la resta:
 2.220446049250313e-16
+
+## Código Fuente
+* [loss_of_significance en python](./code.py)
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
