@@ -1,12 +1,34 @@
-Interpolación Cuadrática
-¿Qué es?
-A diferencia de la lineal, la interpolación cuadrática une tres puntos conocidos, (x0, y0), (x1, y1) y (x2, y2), utilizando un polinomio de segundo grado, es decir, una parábola.
+# Interpolación Cuadrática
 
-Este método es más preciso cuando los datos conocidos siguen una curva (como la trayectoria de un proyectil o el crecimiento de una población), ya que captura la curvatura de los datos en lugar de asumir un cambio constante.
+## ¿Qué es?
+La interpolación cuadrática es un método numérico que estima un valor desconocido utilizando un polinomio de segundo grado (una parábola). A diferencia de la interpolación lineal que solo necesita dos puntos, este método requiere **tres puntos de datos conocidos** $(x_0, y_0)$, $(x_1, y_1)$ y $(x_2, y_2)$. Al capturar la curvatura de los datos, proporciona estimaciones mucho más precisas para funciones no lineales que el método lineal.
 
-Fórmula (Polinomio de Lagrange)
-Una forma común de expresar el polinomio interpolador es mediante la fórmula de Lagrange para n=2:
+## Fórmula
+Existen varias formas de expresar este polinomio (como el método de Newton), pero la más directa para programar es la **Fórmula de Lagrange para polinomios de segundo grado**:
 
-P(x) = y_0 \cdot L_0(x) + y_1 \cdot L_1(x) + y_2 \cdot L_2(x)
+$$y = y_0 \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)} + y_1 \frac{(x - x_0)(x - x_2)}{(x_1 - x_0)(x_1 - x_2)} + y_2 \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)}$$
 
-Donde cada L_i(x) es un coeficiente especial que asegura que la parábola pase exactamente por los tres puntos dados.
+Donde:
+* $(x_0, y_0), (x_1, y_1), (x_2, y_2)$ son nuestros tres puntos conocidos.
+* $x$ es el valor objetivo del cual queremos estimar su pareja $y$.
+
+## Algoritmo
+1. Definir las coordenadas de los tres puntos conocidos $(x_0, y_0)$, $(x_1, y_1)$ y $(x_2, y_2)$.
+2. Establecer el valor de $x$ que deseamos interpolar.
+3. Calcular el primer término de la ecuación matemática (correspondiente a $y_0$).
+4. Calcular el segundo término de la ecuación (correspondiente a $y_1$).
+5. Calcular el tercer término de la ecuación (correspondiente a $y_2$).
+6. Sumar los tres términos para obtener el valor estimado de $y$.
+7. Imprimir el resultado en la consola.
+
+## Datos
+Entrada: 
+Punto 0: (1.0, 1.0)
+Punto 1: (2.0, 4.0)
+Punto 2: (3.0, 9.0)
+Valor a buscar: x = 2.5
+
+Salida:
+--- Interpolación Cuadrática ---
+Puntos: (1.0, 1.0), (2.0, 4.0), (3.0, 9.0)
+Para x = 2.5, el valor estimado de y es: 6.25
