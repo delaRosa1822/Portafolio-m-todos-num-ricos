@@ -38,7 +38,7 @@ Donde las cuatro pendientes ($k$) se calculan secuencialmente de la siguiente ma
 ---
 
 ## Código Fuente
-El código fuente se encuentra en el archivo `runge_kutta.py`. Utiliza la librería **SymPy** para permitir que el usuario ingrese dinámicamente una función de dos variables ($x$, $y$) sin modificar el código interno.
+* [Runge-Kutta en python](./runge_kutta.py)
 
 ---
 
@@ -78,5 +78,5 @@ Para comparar la gran diferencia de precisión entre este método y el método d
 
 ---
 
-## Notas sobre el Algoritmo y la Codificación
-En la codificación de este método, la mayor complejidad respecto a su algoritmo teórico es garantizar que la función evaluable de Python (`f_num`) reciba los argumentos exactamente en el orden $(x, y)$ cada vez que se calcula un valor de $k$. Al usar la librería SymPy, se define `lambdify((x, y), f)` para forzar esta estructura y evitar que los valores de las pendientes $k$ se desfasen por una lectura incorrecta de las variables simbólicas.
+🔙 [Volver al Índice Principal](../../README.md)
+
