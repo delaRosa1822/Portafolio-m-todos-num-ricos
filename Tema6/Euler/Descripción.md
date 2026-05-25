@@ -69,9 +69,8 @@ Resolver $dy/dx = x^2 - y$
 
 ---
 
-## Otro: Problemario
-Para visualizar gráficamente cómo el tamaño del paso $h$ afecta el error de truncamiento de este método, revisa el documento de apoyo:
-* [Ver Problemario de Ecuaciones Diferenciales](./problemario.pdf)
+## Problemario
+https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
 
 ---
 
