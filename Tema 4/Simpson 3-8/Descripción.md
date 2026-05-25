@@ -34,8 +34,9 @@ Donde:
 ---
 
 ## Código Fuente
-El código completo se encuentra en el archivo `simpson_3_8.py`. Utiliza la librería **SymPy** de Python para procesar cualquier función matemática introducida por el usuario y evaluarla dinámicamente en los puntos requeridos.
 
+* [Simpson 3_8 en python](./simpson_3_8.py)
+  
 ---
 
 ## Compilación con datos de entrada y de salida
@@ -59,7 +60,8 @@ El código completo se encuentra en el archivo `simpson_3_8.py`. Utiliza la libr
 * **Datos de salida:**
     * Ancho del intervalo ($h$): `0.523598`
     * Área aproximada (Integral): `2.000863` *(El valor exacto es 2)*
---
 
-## Notas sobre el Algoritmo y la Codificación
-En la codificación se agregó una validación estricta utilizando la operación módulo (`n % 3 != 0`). El algoritmo puramente matemático asume que el usuario sabe que $n$ debe ser múltiplo de 3, pero computacionalmente, si se ingresa un valor como $n=4$ o $n=5$, los multiplicadores del ciclo (`x2` y `x3`) se aplicarían de forma asimétrica, devolviendo un área completamente errónea. El programa previene este error matemático deteniendo la ejecución y alertando al usuario antes de hacer cualquier cálculo.
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
+
