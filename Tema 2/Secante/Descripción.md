@@ -59,7 +59,3 @@ Donde:
 ---
 
 🔙 [Volver al Índice Principal](../../README.md)
-
-
-## Si el algoritmo es diferente a la codificación
-La codificación incluye un mecanismo de seguridad para evitar una **división por cero**. En la fórmula matemática, el denominador es $f(x_i) - f(x_{i-1})$. Si en alguna iteración la función evaluada en ambos puntos da exactamente el mismo resultado (lo que trazaría una línea horizontal perfecta), el código lanzará un aviso y detendrá el proceso para evitar que el programa colapse, un detalle de validación de software que el algoritmo teórico puro suele omitir.
