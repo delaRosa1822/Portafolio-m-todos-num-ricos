@@ -23,6 +23,10 @@ Donde:
 6. Sumarle $y_0$ al resultado anterior para obtener el valor estimado de $y$.
 7. Imprimir el valor estimado en consola.
 
+## Código Fuente
+* [Interpolación_lineal en python](./Codigo.py)
+---
+
 ## Datos 
 Entrada: 
 Punto 0: (2.0, 4.0)
@@ -34,3 +38,6 @@ Salida:
 Punto conocido 1: (2.0, 4.0)
 Punto conocido 2: (6.0, 12.0)
 Para x = 4.0, el valor estimado de y es: 8.0
+---
+
+🔙 [Volver al Índice Principal](../../README.md)
