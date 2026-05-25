@@ -1,4 +1,4 @@
-Conversión Estrecha (Narrowing Primitive Conversion)
+# Conversión Estrecha (Narrowing Primitive Conversion)
 
 ## ¿Qué es?
 La conversión estrecha ocurre cuando intentamos guardar un tipo de dato de mayor capacidad (como un número de 64 bits o un decimal) dentro de una variable de menor capacidad (como un entero de 32 bits). El sistema, al no tener espacio suficiente, simplemente recorta o trunca los bits sobrantes más significativos. Esto puede cambiar drásticamente el valor original sin previo aviso, transformando incluso números positivos gigantes en números negativos.
@@ -28,6 +28,10 @@ Valor tras el corte: -1589934592
 
 ## Código Fuente
 * [Conversion en python](./conversion.py)
+---
+## Problemario
+https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
+
 ---
 
 🔙 [Volver al Índice Principal](../../README.md)
