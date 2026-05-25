@@ -1,48 +1,25 @@
-def interpolacion_cuadratica(x0, y0, x1, y1, x2, y2, x):
-    """
-    Realiza una interpolación cuadrática (usando Polinomio de Lagrange) 
-    para estimar el valor de y en un punto x dado, basándose en tres puntos.
-    
-    Argumentos:
-    x0, y0, x1, y1, x2, y2: Coordenadas de los tres puntos conocidos.
-    x: El valor de x donde se desea hacer la estimación.
-    
-    Retorna:
-    El valor de y estimado (float).
-    """
-    # Verificación de que los valores de x sean distintos para evitar división por cero
-    if x0 == x1 or x0 == x2 or x1 == x2:
-        raise ValueError("Los valores de x0, x1 y x2 deben ser distintos entre sí.")
+## Código Fuente
+```python
+# Ejemplo de Interpolación Cuadrática en Python
 
-    # Cálculo de los términos de Lagrange (L0, L1, L2)
-    l0 = ((x - x1) * (x - x2)) / ((x0 - x1) * (x0 - x2))
-    l1 = ((x - x0) * (x - x2)) / ((x1 - x0) * (x1 - x2))
-    l2 = ((x - x0) * (x - x1)) / ((x2 - x0) * (x2 - x1))
-    
-    # Suma ponderada de los valores y_i por sus términos L_i
-    y = (y0 * l0) + (y1 * l1) + (y2 * l2)
-    return y
+# 1. Definimos nuestros tres puntos conocidos
+# (En este caso, simulamos la curva y = x^2 para probar la precisión)
+x0, y0 = 1.0, 1.0
+x1, y1 = 2.0, 4.0
+x2, y2 = 3.0, 9.0
 
-# --- Compilación con Datos de Entrada y Salida (Ejemplo) ---
-print("--- EJEMPLO DE COMPILACIÓN: INTERPOLACIÓN CUADRÁTICA ---")
+# 2. Definimos el valor de 'x' que queremos buscar
+x_objetivo = 2.5
 
-# Datos de Entrada (Puntos que siguen y = x^2 para verificar)
-point_0 = (0, 0)    # (x0, y0)
-point_1 = (1, 1)    # (x1, y1)
-point_2 = (2, 4)    # (x2, y2)
-x_estimate = 1.5    # Valor de x a estimar
+# 3, 4 y 5. Calculamos cada término de la fórmula de Lagrange por separado
+termino_0 = y0 * ((x_objetivo - x1) * (x_objetivo - x2)) / ((x0 - x1) * (x0 - x2))
+termino_1 = y1 * ((x_objetivo - x0) * (x_objetivo - x2)) / ((x1 - x0) * (x1 - x2))
+termino_2 = y2 * ((x_objetivo - x0) * (x_objetivo - x1)) / ((x2 - x0) * (x2 - x1))
 
-# Cálculo
-try:
-    y_result = interpolacion_cuadratica(point_0[0], point_0[1], point_1[0], point_1[1], point_2[0], point_2[1], x_estimate)
-    
-    # Datos de Salida
-    print(f"Punto 0 conocido: {point_0}")
-    print(f"Punto 1 conocido: {point_1}")
-    print(f"Punto 2 conocido: {point_2}")
-    print(f"Se estimó el valor en x = {x_estimate}")
-    print(f"-----------------------------------")
-    print(f"Resultado estimado en y: {y_result:.4f}")
-    
-except ValueError as e:
-    print(f"Error: {e}")
+# 6. Sumamos los términos para obtener el valor interpolado
+y_estimado = termino_0 + termino_1 + termino_2
+
+# 7. Mostramos los resultados
+print("--- Interpolación Cuadrática ---")
+print(f"Puntos: ({x0}, {y0}), ({x1}, {y1}), ({x2}, {y2})")
+print(f"Para x = {x_objetivo}, el valor estimado de y es: {y_estimado}")
