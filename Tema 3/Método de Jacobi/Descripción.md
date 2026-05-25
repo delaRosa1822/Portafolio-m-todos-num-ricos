@@ -56,6 +56,8 @@ Sistema a resolver:
     * `x_2 = 1.0`
 
 *(Nota: En comparación, Gauss-Seidel resuelve este mismo sistema en 6 iteraciones debido a su actualización secuencial).*
-
+---
+## Problemario
+https://drive.google.com/file/d/1uJzHxw1KtA_l0951911ma6kquPS7wDDU/view?usp=drive_link
 ---
 🔙 [Volver al Índice Principal](../../README.md)
