@@ -33,13 +33,6 @@ La operación elemental que se aplica a toda la fila $F_i$ es:
 5. **Fin.**
 
 ---
-
-## Código Fuente
-
-* [Eliminación gaussiana en python](./eliminacion_gaussiana.py)
-
----
-
 ## Compilación con datos de entrada y de salida
 
 ### Ejemplo 1: Sistema de 3x3
@@ -59,6 +52,13 @@ Sistema de ecuaciones:
     * `x_2 = 3.0`
 
 ---
+## Código Fuente
 
+* [Eliminación gaussiana en python](./eliminacion_gaussiana.py)
+---
+
+## Problemario
+https://drive.google.com/file/d/1uJzHxw1KtA_l0951911ma6kquPS7wDDU/view?usp=drive_link
+---
 🔙 [Volver al Índice Principal](../../README.md)
 
