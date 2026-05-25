@@ -31,5 +31,8 @@ Incremento en cada ciclo: 0.01
 Salida:
 Saldo esperado: 10.00
 Saldo real: 9.999999999999831
-
+---
+## Problemario
+https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
+---
 🔙 [Volver al Índice Principal](../../README.md)
