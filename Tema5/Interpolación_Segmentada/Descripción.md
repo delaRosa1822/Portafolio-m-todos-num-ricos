@@ -33,6 +33,12 @@ Para x = 3.0, el valor estimado de y es: 4.0
 
 ## Código Fuente
 * [Interpolación_segmentada en python](./codigo.py)
+  
+---
+
+## Problemario
+https://drive.google.com/file/d/1bxBJEZFRdDEzUA8ogxwvM9o-LWEhq-ow/view?usp=sharing
+
 ---
 
 🔙 [Volver al Índice Principal](../../README.md)
