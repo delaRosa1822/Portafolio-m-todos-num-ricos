@@ -39,4 +39,8 @@ Para x = 2.5, el valor estimado de y es: 6.25
 
 ---
 
+## Problemario
+https://drive.google.com/file/d/1bxBJEZFRdDEzUA8ogxwvM9o-LWEhq-ow/view?usp=sharing
+
+---
 🔙 [Volver al Índice Principal](../../README.md)
