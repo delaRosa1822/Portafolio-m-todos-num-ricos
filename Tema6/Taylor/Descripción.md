@@ -75,4 +75,9 @@ Para revisar la demostración matemática de cómo se obtienen las derivadas de 
 
 ---
 
+## Problemario
+https://drive.google.com/file/d/1vN8_-Q39ma0lwOa0vDzmYkyOkVhOT3xx/view?usp=sharing
+
+---
+
 🔙 [Volver al Índice Principal](../../README.md)
