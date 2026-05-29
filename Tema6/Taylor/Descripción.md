@@ -69,12 +69,6 @@ Resolver la misma ecuación $dy/dx = x - y$
 
 ---
 
-## Otro: Problemario
-Para revisar la demostración matemática de cómo se obtienen las derivadas de orden superior y comparar los resultados analíticos, visita el documento:
-* [Ver Problemario de Ecuaciones Diferenciales](./problemario.pdf)
-
----
-
 ## Problemario
 https://drive.google.com/file/d/1vN8_-Q39ma0lwOa0vDzmYkyOkVhOT3xx/view?usp=sharing
 
