@@ -70,7 +70,7 @@ Resolver $dy/dx = x^2 - y$
 ---
 
 ## Problemario
-https://drive.google.com/file/d/1yPJyQ21aJCbsrpvLeyoU1FiKDvC7gtZt/view?usp=drive_link
+https://drive.google.com/file/d/1vN8_-Q39ma0lwOa0vDzmYkyOkVhOT3xx/view?usp=sharing
 
 ---
 
