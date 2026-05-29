@@ -35,7 +35,7 @@ Donde:
 ---
 
 ## Código Fuente
-* [Biseccion en python](./euler.py)
+* [Euler en python](./euler.py)
 
 ---
 
