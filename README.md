@@ -66,5 +66,5 @@ Solución numérica de Ecuaciones Diferenciales Ordinarias (EDO).
   
 ---
 
-## Problemario
+## Problemarios
 https://drive.google.com/drive/folders/17W8mBd3SLLaAsjTjcJaBN0z9ehpM2kqF?usp=sharing
