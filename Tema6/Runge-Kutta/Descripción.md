@@ -72,6 +72,11 @@ Resolver $dy/dx = x^2 - y$
 
 ---
 
+## Problemario
+https://drive.google.com/file/d/1vN8_-Q39ma0lwOa0vDzmYkyOkVhOT3xx/view?usp=sharing
+
+---
+
 ## Otro: Problemario
 Para comparar la gran diferencia de precisión entre este método y el método de Euler para los mismos intervalos de paso $h$, puedes consultar el documento:
 * [Ver Problemario de Ecuaciones Diferenciales](./problemario.pdf)
