@@ -38,6 +38,12 @@ Salida:
 Punto conocido 1: (2.0, 4.0)
 Punto conocido 2: (6.0, 12.0)
 Para x = 4.0, el valor estimado de y es: 8.0
+
+---
+
+## Problemario
+https://drive.google.com/file/d/1bxBJEZFRdDEzUA8ogxwvM9o-LWEhq-ow/view?usp=sharing
+
 ---
 
 🔙 [Volver al Índice Principal](../../README.md)
